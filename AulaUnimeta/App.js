@@ -1,11 +1,18 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 
+
+function TextButton(){
+return <Text style={{color:'white'}}> Meu nome é César </Text>;
+}
+
+
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text> Por enquanto está certo </Text>
+      <Text style={{color:'orange'}}> Olá Mundo! </Text>
       <StatusBar style="auto" />
+      <TextButton/>
     </View>
   );
 }
@@ -13,7 +20,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#eaeaea',
+    backgroundColor: '#000',
     alignItems: 'center',
     justifyContent: 'center',
 
